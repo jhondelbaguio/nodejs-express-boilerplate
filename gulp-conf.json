@@ -1,0 +1,27 @@
+{
+    "vendorCss": [
+
+    ],
+
+    "vendorJs": [
+
+
+    ],
+
+    "js": [
+        "./assets/js/app.module.js",
+        "./assets/js/**/*.module.js",
+        "./assets/js/**/*.js"
+    ],
+    "sass": [
+        "./assets/styles/*.scss"
+    ],
+    "templates": [
+        "./assets/templates/**/*.html"
+    ],
+    "specs": [
+        "!./tests/coverage/**/*.*",
+        "./tests/**/*.js"
+    ]
+
+}
