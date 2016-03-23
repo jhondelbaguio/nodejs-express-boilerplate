@@ -1,7 +1,13 @@
 var mongoose = require('mongoose'),
-	Users = mongoose.model('User');
+    Users = mongoose.model('User');
 
-exports.index = function(req,res){
 
-	res.render('index', { title: 'Express' });
+module.exports = {
+    index: function(req, res) {
+        res.render('index', { title: 'Express' });
+    },
+    checkUser:function(req,res,next){
+    	console.log('haha');
+    	return next();
+    }
 }
